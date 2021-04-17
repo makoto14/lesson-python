@@ -15,6 +15,9 @@ RUN pip install -U pip && \
     pip install -U autopep8 && \
     pip install -U pylint && \
     pip install -U numpy && \
-    pip install -U pandas
+    pip install -U pandas && \
+    pip install -U sympy && \
+    pip install -U sklearn && \
+    pip install -U matplotlib
 
 VOLUME /root/
