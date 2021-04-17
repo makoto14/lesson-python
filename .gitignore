@@ -1,0 +1,6 @@
+.cache/
+.pylint.d/
+.ssh/
+.vscode-server/
+.bash_history
+.DS_Store
