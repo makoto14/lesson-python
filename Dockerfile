@@ -16,6 +16,7 @@ RUN pip install -U pip && \
     pip install -U pylint && \
     pip install -U numpy && \
     pip install -U pandas && \
+    pip install -U pandas_datareader && \
     pip install -U sympy && \
     pip install -U sklearn && \
     pip install -U matplotlib

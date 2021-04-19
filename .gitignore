@@ -4,3 +4,6 @@
 .vscode-server/
 .bash_history
 .DS_Store
+.ipython/
+.local/
+.vscode/

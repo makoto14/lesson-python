@@ -18,6 +18,7 @@
         "ms-ceintl.vscode-language-pack-ja",
         "ms-python.python",
         "oderwat.indent-rainbow",
-        "almenon.arepl"
+        "almenon.arepl",
+        "ms-toolsai.jupyter"
     ]
 }
