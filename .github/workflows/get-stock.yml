@@ -19,11 +19,12 @@ jobs:
       - name: Get Python version
         run: python -V
       - name: Install dependencies
-        run: pip install pandas
-        run: pip install pandas_datareader
-        run: pip install yfinance
-        run: pip install json
-        run: pip install datetime
+        run: |
+          pip install pandas
+          pip install pandas_datareader
+          pip install yfinance
+          pip install json
+          pip install datetime
       - name: Run Python
         run: python ./lesson_file/analysis/stock/1-2.py
       - name: git setting
