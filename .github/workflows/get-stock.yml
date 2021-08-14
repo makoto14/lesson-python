@@ -38,4 +38,4 @@ jobs:
           git add .
           git commit -m "add stock data json"
           git pull
-          git push origin master
+          git push origin main
