@@ -30,7 +30,7 @@ jobs:
       - name: git setting
         run: |
           git config --local user.name "makoto14"
-          git config --local user.email "${{secrets.E_MAIL}}""
+          git config --local user.email "${{secrets.E_MAIL}}"
       - name: Commit files
         run: |
           git add .
