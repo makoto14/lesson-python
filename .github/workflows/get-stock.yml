@@ -1,0 +1,38 @@
+name: Action Sample
+
+on:
+  push:
+    branches: 
+      - master
+  workflow_dispatch:
+
+jobs:
+  numpy-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Get Python version
+        run: python -V
+      - name: Install dependencies
+        run: pip install pandas
+        run: pip install pandas_datareader
+        run: pip install yfinance
+        run: pip install json
+        run: pip install datetime
+      - name: Run Python
+        run: python ./lesson_file/analysis/stock/1-2.py
+      - name: git setting
+        run: |
+          git config --local user.name "makoto14"
+          git config --local user.email "${{secrets.E_MAIL}}""
+      - name: Commit files
+        run: |
+          git add .
+          git commit -m "add stock data json"
+          git pull
+          git push origin master
