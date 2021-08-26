@@ -1,11 +1,11 @@
 name: Action Sample
 
 on:
+  schedule:
+      - cron:  '0 0 * * *'
   push:
     branches: 
       - main
-    schedule:
-      - cron:  '45 10 * * *'
   workflow_dispatch:
 
 jobs:
